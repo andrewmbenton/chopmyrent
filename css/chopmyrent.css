@@ -1,0 +1,27 @@
+#container {
+  font-size: .9em;
+  width: 960px;
+  margin: 20px auto;
+}
+
+h1, h2, h3, h4, h5 {
+  color: orange;
+  margin: 4px 0;
+  padding: 0;
+}
+
+table {
+  font-size: 1em;
+}
+
+.underline {
+  margin: 8px 0;
+  border-bottom: solid 2px orange;
+}
+
+#add-bdrm-link {
+  cursor: pointer;
+  color: orange;
+  text-decoration: underline;
+  font-size: .8em;
+}

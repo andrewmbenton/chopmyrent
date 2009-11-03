@@ -6,25 +6,37 @@
     <script src="js/chopmyrent.js" type="text/javascript"></script>
   </head>
   <body>
-    <h4>ChopMyRent</h4>
-    <h5>a super-easy way to determine split rent payments among multiple roommates based on room sizes</h5>
-    
-    <span>total rent: $</span>
-    <input type="text" name="total_rent" id="total_rent" size="5">
-    
-    <table>
-      <tr>
-        <td><span>size of bedroom one:</span></td>
-        <td><input type="text" name="bdrm_1_size" id="bdrm_1_size" size="5"></td>
-        <td><span>rent for bedroom one:</span></td>
-        <td><span id="bdrm_1_rent"></span></td>
-      </tr>
-      <tr>
-        <td><span>size of bedroom two:</span></td>
-        <td><input type="text" name="bdrm_2_size" id="bdrm_2_size" size="5"></td>
-        <td><span>rent for bedroom two:</span></td>
-        <td><span id="bdrm_2_rent"></span></td>
-      </tr>
-    </table>
+    <div id="container">
+      <h3>ChopMyRent</h3>
+      <h4>a super-easy way to determine split rent payments among multiple roommates based on room sizes</h4>
+      <div class="underline"></div>
+      <span>total rent: $</span>
+      <input type="text" name="total-rent" id="total-rent" size="6">
+      <br/>
+      <span>total apartment area (sq feet or whatever, just be consistent): </span>
+      <input type="text" name="total-area" id="total-area" size="6">
+<!--      <br/>-->
+<!--      <span>common space weight (at least zero, at most one): </span>-->
+<!--      <input type="text" name="common-weight" id="common-weight" size="6">-->
+      
+      <table>
+        <tr id="bdrm-1">
+          <td><span>area of bedroom 1:</span></td>
+          <td><input type="text" name="bdrm-area" id="bdrm-1-area" size="6"></td>
+          <td><span>rent for bedroom 1:</span></td>
+          <td><span id="bdrm-1-rent"></span></td>
+        </tr>
+        <tr id="bdrm-2">
+          <td><span>area of bedroom 2:</span></td>
+          <td><input type="text" name="bdrm-area" id="bdrm-2-area" size="6"></td>
+          <td><span>rent for bedroom 2:</span></td>
+          <td><span id="bdrm-2-rent"></span></td>
+        </tr>
+        <tr colspan="4" id="add-bdrm">
+          <td><span rel="link" id="add-bdrm-link">add another bedroom</span></td>
+        </tr>
+      </table>
+      <div class="underline"></div>
+    </div>
   </body>
 </html>
